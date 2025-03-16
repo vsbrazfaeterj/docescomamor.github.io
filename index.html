@@ -3,7 +3,8 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Document</title>
+    <title>Doces com Amor</title>
+    <link rel="icon" type="image/png" href="img/fatia-de-bolo.png">
 </head>
 <style>
     * {
@@ -69,15 +70,14 @@
         flex-wrap: wrap;
         flex: 1;
         justify-content: space-around;
-        /* Distribui os itens com espaço ao redor */
         align-items: flex-start;
-        /* Alinha os itens no topo do contêiner */
         margin: 10px;
     }
 
-    /* Para telas menores que 768px (como celulares), os itens ficam em coluna */
     @media (max-width: 768px) {
-        footer p, a{
+
+        footer p,
+        a {
             font-size: 1em;
         }
 
@@ -94,21 +94,12 @@
             box-shadow: 1px 1px 5px 1px #aa844a45;
             padding: 10px;
             margin: 10px;
-            /* Mantém espaçamento entre os itens */
-
-            /* Flexbox correto para organizar os itens */
             display: flex;
             flex-direction: column;
             align-items: center;
             justify-content: center;
-
-            /* Ajuste de largura */
             width: 100%;
-            /* Usa toda a largura disponível */
             max-width: 300px;
-            /* Limita o tamanho máximo */
-
-            /* Se precisar cortar texto dentro da div */
             overflow: hidden;
             text-overflow: ellipsis;
         }
@@ -129,33 +120,23 @@
         margin: 10px;
         display: flex;
         flex-direction: column;
-        /* flex: 1; */
         width: 300px;
         justify-content: space-between;
-        /* Alinha itens verticalmente */
         align-items: center;
-        /* Alinha itens horizontalmente */
-
-        /* Define uma largura fixa para o item (ajustável conforme necessário) */
     }
 
     .conteudo p {
         white-space: nowrap;
-                
-        /* Impede a quebra de linha */
+
         overflow: hidden;
-        /* Esconde o conteúdo que ultrapassar o limite */
         text-overflow: ellipsis;
         display: block;
     }
 
-    .content li {
-        /* list-style-type: none; */
-    }
+    .content li {}
 
     .produtos {
         align-items: center;
-        /* display: flex; */
         justify-content: space-around;
         flex-direction: column;
         font-family: 'Times New Roman', Times, serif;
@@ -193,14 +174,12 @@
         display: flex;
         flex-direction: column;
         align-items: center;
-        /* width: 400px; */
         max-width: 500px;
         background: #f8f8f8;
         padding: 15px;
         margin: 20px;
         border-radius: 10px;
         box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        /* position: fixed; */
         top: 20px;
         right: 20px;
     }
@@ -295,7 +274,6 @@
         width: 300px;
         min-height: 150px;
         max-height: 200px;
-        /*limita o tamanho do campo de avaliação*/
         border-style: solid;
         border-width: 1px;
         border-color: #aa844a45;
@@ -437,6 +415,7 @@
         font-size: 1em;
         opacity: 0.8;
     }
+
 </style>
 
 <body>
@@ -566,8 +545,8 @@
 
 
     <div>
-        <a class="btn_link" href="https://wa.me/?text=Olá,%20gostaria%20de%20mais%20informações!"
-            target="_blank">Enviar mensagem no WhatsApp</a>
+        <a class="btn_link" href="https://wa.me/?text=Olá,%20gostaria%20de%20mais%20informações!" target="_blank">Enviar
+            mensagem no WhatsApp</a>
     </div>
 
     <div class="linha"></div>
